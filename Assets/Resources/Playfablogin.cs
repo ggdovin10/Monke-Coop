@@ -114,7 +114,7 @@ public class Playfablogin : MonoBehaviour
 
     void OnGetUserInventorySuccess(GetUserInventoryResult result)
     {
-        coins = result.VirtualCurrency["HS"];
+        coins = result.VirtualCurrency["MD"];
         currencyText.text = "You have " + coins.ToString() + " " + CurrencyName;
     }
 
